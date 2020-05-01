@@ -123,7 +123,6 @@ ul ul li:hover a {
     background-image: url('https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .splash-inner {
@@ -146,4 +145,53 @@ ul ul li:hover a {
     font-size: 60px;
     margin: 30px 0;
     position: relative;
+}
+
+/* Services */
+
+.services i {
+    font-size: 30px;
+    background: $color-one;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    color: $color-two;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.services {
+    color: $color-one;
+    padding: 0 16px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: $color-three;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.con-foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    white-space: nowrap;
+}
+
+.footer i {
+    font-size: 20px;
+    background: $color-one;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: $color-two;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
 }
