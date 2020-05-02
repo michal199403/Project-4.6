@@ -33,6 +33,14 @@ body {
     padding: 96px 0 ;
 }
 
+.section-title {
+    font-size: 48px;
+}
+
+.section-subtitle {
+    font-size: 24px;
+}
+
 /* Buttons */
 
 .btn {
@@ -46,6 +54,7 @@ body {
     text-decoration: none;
     border-style: solid;
     border-width: 2px;
+    cursor: pointer;
 }
 
 .btn-one {
@@ -80,8 +89,8 @@ body {
         text-decoration: none;
         color: $color-two;
     }
-    a:hover {
-        color: $color-two;
+    ul a:hover {
+        color: $color-four;
     }
 }
 
@@ -112,7 +121,7 @@ ul ul li a {
 }
 
 ul ul li:hover a {
-    color: $color-three;
+    color: $color-four;
 }
 
 /* Splash */
@@ -164,6 +173,7 @@ ul ul li:hover a {
 .services {
     color: $color-one;
     padding: 48px 16px;
+    line-height: 1.5;
 }
 
 /* Gallery */
@@ -174,10 +184,7 @@ ul ul li:hover a {
     padding: 48px 0;
 }
 
-.row {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
+
 
 .card {
     position: relative;
@@ -187,6 +194,7 @@ ul ul li:hover a {
     word-wrap: break-word;
     background-color: $color-white;
     background-clip: border-box;
+    margin: 36px auto;
 }
 
 .card img {
@@ -230,3 +238,4 @@ ul ul li:hover a {
     text-align: center;
     display: inline-block;
 }
+
