@@ -16,7 +16,7 @@ $transition: all 1s;
     box-sizing: border-box;
 }
 body {
-    margin:0;
+    margin: 0;
     font-size: 16px;
     font-family: $font-txt;
     color: $color-two;
@@ -78,6 +78,7 @@ body {
         color: $color-white;
         background: $color-one;
         font-size: 32px;
+
     }
     .hamitems ul {
         box-sizing: border-box;
@@ -87,10 +88,11 @@ body {
     .hamitems { 
         display: none;
     }
-    .hamnav input:checked {
-        .hamitems { 
+    .hamnav input:checked ~ .hamitems {
             display: block; 
-        }
+    }
+    .navigation {
+        display: inline-block;
     }
 }
 
@@ -276,7 +278,7 @@ ul ul li:hover a {
 
 .con-foot {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
 }
 
 .footer p {
@@ -293,6 +295,11 @@ ul ul li:hover a {
     border-radius: 50%;
     text-align: center;
     display: inline-block;
+}
+.foot-icons {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
 }
 
 @media (max-width: 768px) {

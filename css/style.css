@@ -78,8 +78,11 @@ body {
   .hamitems {
     display: none;
   }
-  .hamnav input:checked .hamitems {
+  .hamnav input:checked ~ .hamitems {
     display: block;
+  }
+  .navigation {
+    display: inline-block;
   }
 }
 
@@ -270,8 +273,6 @@ ul ul li:hover a {
 .con-foot {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
 }
 
 .footer p {
@@ -288,6 +289,12 @@ ul ul li:hover a {
   border-radius: 50%;
   text-align: center;
   display: inline-block;
+}
+
+.foot-icons {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 @media (max-width: 768px) {
