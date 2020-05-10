@@ -62,41 +62,6 @@ body {
     color: $color-one;
 }
 /* Navigation */
-
-.hamnav label, .hamburger {
-    display: none;
-}
-.hamitems {
-    display: flex;
-}
-@media (max-width: 768px) {
-    .con-nav {
-        display: block;
-    }
-    .hamnav label {
-        display: inline-block;
-        color: $color-white;
-        background: $color-one;
-        font-size: 32px;
-
-    }
-    .hamitems ul {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-    }
-    .hamitems { 
-        display: none;
-    }
-    .hamnav input:checked ~ .hamitems {
-            display: block; 
-    }
-    .navigation {
-        display: inline-block;
-    }
-}
-
-
 .con-nav {
     display: flex;
     justify-content: space-between;
@@ -157,6 +122,57 @@ ul ul li a {
 ul ul li:hover a {
     color: $color-four;
 }
+
+.hamnav label, .hamburger {
+    display: none;
+}
+.hamitems {
+    display: flex;
+}
+@media (max-width: 768px) {
+    .con-nav {
+        display: block;
+    }
+    .hamburger {
+        display: inline-block;
+    }
+    .hamnav label {
+        display: inline-block;
+        color: $color-white;
+        background: $color-one;
+        font-size: 32px;
+
+    }
+    .hamitems ul {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+    }
+    .hamitems { 
+        display: none;
+    }
+    .hamnav input:checked ~ .hamitems {
+            display: block; 
+    }
+    .navigation {
+        display: block;
+    }
+    .navigation li {
+        display: block;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .navigation ul ul {
+        display: none;
+    }
+    .navigation ul li :hover ul ul {
+        display: block;
+    }
+
+}
+
+
+
 
 /* Splash */
 
@@ -305,6 +321,7 @@ ul ul li:hover a {
 @media (max-width: 768px) {
     .footer {
         display: block;
+        padding-bottom: 50px;
     }
     .con-foot {
         display: block;
